@@ -12,7 +12,7 @@ class Logger
 
 	public static function console_log($body)
 	{
-		$data = date("date: Y-m-d H:i:s\n");
+		$data = 'date: ' . date("Y-m-d H:i:s") . "\n";
 		$data .= print_r($body, TRUE) . "\n";
 
 		$write_file_path = realpath(Config::LOG_PATH . '/console.log');

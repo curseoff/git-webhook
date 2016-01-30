@@ -4,11 +4,8 @@ namespace GitWebhook\Platform;
 
 class Github
 {
-	public static function get() {
-		$data = json_decode(file_get_contents(__DIR__ . '/../../../example/github.json'), TRUE);
-		#$data = $_POST;
-		return self::parse($data);
-	}
+	use \GitWebhook\Object; 
+
 	public static function parse($data) {
 		$data = json_decode($data['payload'], TRUE);
 		$parse = [
