@@ -1,4 +1,6 @@
 repository.yml
 .*
+/logs/
+/example/
 !.gitignore
 !.gitkeep
