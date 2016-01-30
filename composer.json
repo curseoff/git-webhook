@@ -1,0 +1,14 @@
+{
+    "require": {
+        "cebe/markdown": "*",
+        "twig/twig": "*",
+        "mustangostang/spyc": "*"
+    },
+    "require-dev": {
+           "phpspec/phpspec": "~2.0"
+       },
+       "config": {
+           "bin-dir": "bin"
+       },
+       "autoload": {"psr-4": {"": ""}}
+}
